@@ -1,0 +1,9 @@
+{
+	"application": {
+		"account": "ACCONT TO DISPLAY"
+	},
+	"authorization": {
+		"consumerKey": "YOUR CONSUMER KEY HERE",
+		"consumerSecret": "YOUR CONSUMER SECRET HERE"
+	}
+}
