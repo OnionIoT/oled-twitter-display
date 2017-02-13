@@ -1,6 +1,6 @@
 {
 	"application": {
-		"account": "ACCONT TO DISPLAY"
+		"user": "TWITTER USER TO DISPLAY"
 	},
 	"authorization": {
 		"consumerKey": "YOUR CONSUMER KEY HERE",
