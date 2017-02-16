@@ -97,28 +97,30 @@ def oledWriteTweet(user, text, date):
 
 
 ### MAIN PROGRAM ###
-# find the directory of the script
-dirName = os.path.dirname(os.path.abspath(__file__))
+if __name__ == "__main__":
+    # find the directory of the script
+    dirName = os.path.dirname(os.path.abspath(__file__))
 
-# read the config file
-with open( '/'.join([dirName, 'config.json']) ) as f:
-	config = json.load(f)
+    # read the config file
+    with open( '/'.join([dirName, 'config.json']) ) as f:
+    	config = json.load(f)
 
 
-# authenticate with twitter
-authSuccess = twitterApiAuthenticate(config['authorization']['consumerKey'], config['authorization']['consumerSecret'])
-if not authSuccess:
-    print "ERROR: Invalid API credentials!"
-    exit()
+    # authenticate with twitter
+    authSuccess = twitterApiAuthenticate(config['authorization']['consumerKey'], config['authorization']['consumerSecret'])
+    if not authSuccess:
+        print "ERROR: Invalid API credentials!"
+        exit()
 
-# use twitter api to get last tweet of specified user
-tweet = twitterApiGetLastTweet(config['application']['user'])
-if not tweet:
-    print "ERROR: Could not retreive Tweet!"
-    exit()
+    # use twitter api to get last tweet of specified user
+    tweet = twitterApiGetLastTweet(config['application']['user'])
+    if not tweet:
+        print "ERROR: Could not retreive Tweet!"
+        exit()
 
-print 'Got tweet! ', tweet
-# display the tweet on the OLED
-oledWriteTweet(config['application']['user'], tweet['text'], tweet['date'])
+    print 'Got tweet! ', tweet
+    # display the tweet on the OLED
+    oledWriteTweet(config['application']['user'], tweet['text'], tweet['date'])
 
-print 'Done!'
+    print 'Done!'
+    
