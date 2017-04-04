@@ -19,9 +19,6 @@ def twitterApiAuthenticate(consumerKey, consumerSecret):
 
     # create the request headers and body
     headers = {
-        # 'authorization': {
-        #     'Basic': encodedConsumerCredentials
-        # },
         'Authorization': 'Basic ' + encodedConsumerCredentials,
         'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
     }
@@ -97,7 +94,7 @@ def oledWriteTweet(user, text, date):
 
 
 ### MAIN PROGRAM ###
-if __name__ == "__main__":
+def mainProgram():
     # find the directory of the script
     dirName = os.path.dirname(os.path.abspath(__file__))
 
@@ -123,4 +120,7 @@ if __name__ == "__main__":
     oledWriteTweet(config['application']['user'], tweet['text'], tweet['date'])
 
     print 'Done!'
-    
+
+
+if __name__ == "__main__":
+	mainProgram()
