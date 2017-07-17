@@ -6,7 +6,8 @@ Twitter IoT Name badge Displays your twitter feed on a badge
 2. Onion OLED display
 3. Onion OLED expansion dock
 
-
+## Thingiverse STL Files
+[Twitter 3D Print Badge Files](https://www.thingiverse.com/thing:2438237).
 
 Displays your twitter feed on a badge
 
