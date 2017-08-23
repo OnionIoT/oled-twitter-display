@@ -25,3 +25,6 @@ opkg install python-light python-urllib3 pyOledExp
 
 2. Something went wrong when running the mainProgram() in the [`olderTwitterDisplay.py`](https://github.com/AmieDD/oled-twitter-display/blob/master/oledTwitterDisplay.py)
   * In this case, it's something to do with the ssl module on your OS system where it might not be able to make `HTTPS` requests. So you will have to change L8 of `oledTwitterDisplay.py` file to [`baseUrl = "http://api.twitter.com"`](https://github.com/AmieDD/oled-twitter-display/blob/master/oledTwitterDisplay.py#L8)
+
+## Questions?
+amie@amiedd.com
