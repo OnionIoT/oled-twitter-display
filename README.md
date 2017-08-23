@@ -1,5 +1,5 @@
-# Twitter-Onion-IoT-Name-Badge
-Twitter IoT Name badge Displays your twitter feed on a badge
+# Twitter Onion IoT Wearble Name Badge
+Twitter IoT Name badge Displays your twitter feed on a badge using Twitter REST API
 
 ## Twitter IoT Name badge Hardware Ingredients
 1. Onion Omega2+
@@ -25,6 +25,9 @@ opkg install python-light python-urllib3 pyOledExp
 
 2. Something went wrong when running the mainProgram() in the [`olderTwitterDisplay.py`](https://github.com/AmieDD/oled-twitter-display/blob/master/oledTwitterDisplay.py)
   * In this case, it's something to do with the ssl module on your OS system where it might not be able to make `HTTPS` requests. So you will have to change L8 of `oledTwitterDisplay.py` file to [`baseUrl = "http://api.twitter.com"`](https://github.com/AmieDD/oled-twitter-display/blob/master/oledTwitterDisplay.py#L8)
+  
+3. Text on the OLED display is upside down. 
+  * Working on a solution
 
 ## Questions?
 amie@amiedd.com
