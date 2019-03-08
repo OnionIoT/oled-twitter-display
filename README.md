@@ -1,6 +1,8 @@
 # Twitter Onion IoT Wearble Name Badge
 Twitter IoT Name badge Displays your twitter feed on a badge using Twitter REST API
 
+![Webpage for this project](https://amiedd.github.io/oled-twitter-display/)
+
 ![Wearable Twitter Feed Badge](http://amiedd.com/blogimageuploads/amiedd-github.jpg)
 
 ## Twitter IoT Name badge Hardware Ingredients
@@ -33,3 +35,4 @@ opkg install python-light python-urllib3 pyOledExp
 
 ## Questions?
 amie@amiedd.com
+https://www.amiedd.com
